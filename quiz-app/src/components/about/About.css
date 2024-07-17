@@ -1,0 +1,47 @@
+/* about.css */
+
+.about-container {
+  
+    max-width: 800px;
+    max-height: 1000px;
+    margin: 40px auto 80px;
+    padding: 20px;
+    background-color: #ffffff70;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.108);
+  }
+  
+  .about-container h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .about-container .developer-links {
+    margin-top: 20px;
+  }
+  
+  .about-container .developer-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-container .developer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .about-container .developer-links ul li a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .about-container .developer-links ul li a:hover {
+    text-decoration: underline;
+  }
+  

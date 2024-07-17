@@ -1,0 +1,46 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; 
+  background-color: #54c2f2a5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #e9ebecd0;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-content {
+  flex: 1;
+  
+}
+
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-right, .footer-right {
+    display: none;
+  }
+
+  .app-header, .app-footer {
+    justify-content: center;
+  }
+}

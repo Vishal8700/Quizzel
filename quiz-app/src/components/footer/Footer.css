@@ -1,0 +1,60 @@
+.app-footer {
+  background-color: #007bff;
+  color: #fff;
+  padding: 50px;
+
+}
+#logo{
+  width: 100px;
+  border-radius: 50px;
+
+}
+
+.footer-content {
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.intro{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+  font-weight: 500;
+  list-style: none; 
+}
+
+.footer-section h4 {
+  margin-top: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  font-weight: 500;
+  padding: 0;
+}
+
+.social-icons {
+  margin-right: 40px;
+  text-align: right;
+  
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem; /* Font size of the icons */
+  margin-left: 10px; /* Adjust spacing between icons */
+  display: inline-block; /* Ensure each icon is on its own line */
+}
+
+.social-icons a:not(:last-child) {
+  margin-right: 10px; /* Add gap between icons */
+}
+
+.social-icons a:hover {
+  color: #232323;
+}
