@@ -1,6 +1,6 @@
 
 
-# Quizzel
+# Quizzel X Verve Bridge
 
 Welcome to Quizzel, a dynamic and engaging quiz application built with React! Whether you want to challenge yourself with solo quizzes or compete with friends in one-on-one mode, Quizzel has got you covered. With a sleek and responsive design, Quizzel ensures a seamless experience across both desktop and mobile devices.
 
