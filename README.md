@@ -4,8 +4,6 @@
 
 Welcome to Quizzel, a dynamic and engaging quiz application built with React! Whether you want to challenge yourself with solo quizzes or compete with friends in one-on-one mode, Quizzel has got you covered. With a sleek and responsive design, Quizzel ensures a seamless experience across both desktop and mobile devices.
 
-https://www.youtube.com/watch?v=HMhnEUx7xmA
-
 ## Table of Contents
 
 - [Features](#features)
@@ -15,6 +13,7 @@ https://www.youtube.com/watch?v=HMhnEUx7xmA
 - [Components](#components)
 - [Styling](#styling)
 - [Contributing](#contributing)
+- [Collaboration](#collaboration)
 - [License](#license)
 
 ## Features
@@ -115,6 +114,12 @@ We welcome contributions to Quizzel! If you would like to contribute, please for
 ## Collaboration
 
 This project was developed in collaboration with [Verve Bridge](https://vervebridge.com), combining our expertise to create an exceptional quiz application.
+
+## Demo Video
+
+Check out this video to see Quizzel in action! 🎥👇
+
+[![Quizzel Demo](https://img.youtube.com/vi/HMhnEUx7xmA/0.jpg)](https://www.youtube.com/watch?v=HMhnEUx7xmA)
 
 ## License
 
