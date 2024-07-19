@@ -1,6 +1,4 @@
-Great! Here's the updated README for your quiz app "Quizzel," including the collaboration with Verve Bridge:
 
----
 
 # Quizzel
 
