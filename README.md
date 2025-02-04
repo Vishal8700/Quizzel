@@ -1,10 +1,9 @@
 
 
-# Quizzel X Verve Bridge
+# Quizzel 
 
 Welcome to Quizzel, a dynamic and engaging quiz application built with React! Whether you want to challenge yourself with solo quizzes or compete with friends in one-on-one mode, Quizzel has got you covered. With a sleek and responsive design, Quizzel ensures a seamless experience across both desktop and mobile devices.
 
-![vervebridge](https://github.com/user-attachments/assets/bca38116-ac55-4666-a20f-333a647316c2)
 
 ## Table of Contents
 
@@ -112,10 +111,6 @@ Quizzel uses Google Font "Poppins" by default for all its CSS styles, ensuring a
 ## Contributing
 
 We welcome contributions to Quizzel! If you would like to contribute, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
-
-## Collaboration
-
-This project was developed in collaboration with [Verve Bridge](https://vervebridge.com), combining our expertise to create an exceptional quiz application.
 
 ## Demo Video
 
