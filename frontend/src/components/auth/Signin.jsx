@@ -13,7 +13,7 @@ function SignIn() {
     e.preventDefault();
     try {
       // Make a POST request to the sign-in endpoint
-      const response = await axios.post('http://localhost:3001/api/login', {
+      const response = await axios.post('https://quizzel.onrender.com/api/login', {
         email,
         password,
       });

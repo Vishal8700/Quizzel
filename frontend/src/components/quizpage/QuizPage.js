@@ -19,7 +19,7 @@ function QuizPage() {
         console.log("Quiz ID from URL (quizId):", id); // CHECK ID
         const fetchQuiz = async () => {
             try {
-                const response = await axios.get(`http://localhost:3001/api/quizzes/${id}`); // Replace with your backend URL
+                const response = await axios.get(`https://quizzel.onrender.com/api/quizzes/${id}`); // Replace with your backend URL
                 const quizData = response.data;
 
                 setQuizTitle(quizData.title);

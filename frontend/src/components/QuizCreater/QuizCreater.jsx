@@ -76,7 +76,7 @@ const QuizCreator = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:3001/api/create-quiz', {
+            const response = await axios.post('https://quizzel.onrender.com/api/create-quiz', {
                 title: quizData.title,
                 imageUrl: quizData.imageUrl,
                 questions: quizData.questions

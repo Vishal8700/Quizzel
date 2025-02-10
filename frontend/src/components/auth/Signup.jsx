@@ -17,7 +17,7 @@ function SignUp() {
     try {
       console.log('Submitting signup with:', { firstName, lastName, email, password });
       // Make a POST request to the signup endpoint
-      const response = await axios.post('http://localhost:3001/api/signup', {
+      const response = await axios.post('https://quizzel.onrender.com/api/signup', {
         firstName,
         lastName,
         email,

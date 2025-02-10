@@ -12,7 +12,7 @@ function QuizList() {
     useEffect(() => {
         const fetchQuizzes = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/quizzes');
+                const response = await axios.get('https://quizzel.onrender.com/api/quizzes');
                 const backendQuizzes = response.data.map(quiz => ({
                     id: quiz.quizId,
                     title: quiz.title,

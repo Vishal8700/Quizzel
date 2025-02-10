@@ -1,88 +1,4 @@
-// import React, { useState, useEffect } from 'react';
-// import { useNavigate } from 'react-router-dom';
-// import axios from 'axios';
-// import './ListQuiz.css';
 
-// function ListQuiz() {
-//     const [quizzes, setQuizzes] = useState([]);
-//     const [deleteConfirmation, setDeleteConfirmation] = useState('');
-//     const navigate = useNavigate();
-
-//     useEffect(() => {
-//         // Fetch quizzes created by the logged-in user
-//         const fetchQuizzes = async () => {
-//             try {
-//                 const token = localStorage.getItem('token'); // Get the token from local storage
-
-//                 const response = await axios.get('http://localhost:3001/api/quizzes', {
-//                     headers: {
-//                         Authorization: `Bearer ${token}`, // Include the token in the Authorization header
-//                     },
-//                 });
-//                 setQuizzes(response.data);
-//             } catch (error) {
-//                 console.error("Error fetching quizzes:", error);
-//                 // Handle error (e.g., redirect to login if unauthorized)
-//                 if (error.response && error.response.status === 403) {
-//                     navigate('/login');
-//                 }
-//             }
-//         };
-
-//         fetchQuizzes();
-//     }, [navigate]);
-
-//     const handleDeleteQuiz = async (quizId) => {
-//         if (deleteConfirmation === 'sudo delete') {
-//             try {
-//                 const token = localStorage.getItem('token');
-//                 await axios.delete(`http://localhost:3001/api/quizzes/${quizId}`, {
-//                     headers: {
-//                         Authorization: `Bearer ${token}`,
-//                     },
-//                 });
-
-//                 // Update the quizzes list after successful deletion
-//                 setQuizzes(quizzes.filter((quiz) => quiz.quizId !== quizId));
-//                 setDeleteConfirmation(''); // Clear the confirmation input
-//             } catch (error) {
-//                 console.error("Error deleting quiz:", error);
-//                 // Handle error (e.g., display an error message)
-//             }
-//         } else {
-//             alert('Please type "sudo delete" to confirm deletion.');
-//         }
-//     };
-
-//     return (
-//         <div className="list-quiz-container">
-//             <h1>My Quizzes</h1>
-//             {quizzes.length === 0 ? (
-//                 <p>No quizzes created yet.</p>
-//             ) : (
-//                 <ul>
-//                     {quizzes.map((quiz) => (
-//                         <li key={quiz.quizId}>
-//                             {quiz.title}
-//                             <button onClick={() => handleDeleteQuiz(quiz.quizId)}>Delete</button>
-//                         </li>
-//                     ))}
-//                 </ul>
-//             )}
-//             <input
-//                 type="text"
-//                 placeholder="Type 'sudo delete' to confirm"
-//                 value={deleteConfirmation}
-//                 onChange={(e) => setDeleteConfirmation(e.target.value)}
-//             />
-
-//         </div>
-//     );
-// }
-
-// export default ListQuiz;
-
-// ListQuiz.jsx
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -100,7 +16,7 @@ function ListQuiz() {
         const fetchQuizzes = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const response = await axios.get('http://localhost:3001/api/quizzes', {
+                const response = await axios.get('https://quizzel.onrender.com/api/quizzes', {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -129,7 +45,7 @@ function ListQuiz() {
         if (deleteConfirmation === 'sudo delete') {
             try {
                 const token = localStorage.getItem('token');
-                await axios.delete(`http://localhost:3001/api/quizzes/${selectedQuizId}`, {
+                await axios.delete(`https://quizzel.onrender.com/api/quizzes/${selectedQuizId}`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
