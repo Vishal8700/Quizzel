@@ -171,6 +171,7 @@ app.get('/api/quizzes/:id', async (req, res) => {
     res.status(500).json({ message: "Internal server error", error: error.message }); 
   }
 });
+
 app.get('/hello', (req, res) => {
   res.send('Hello, World!');
 });
