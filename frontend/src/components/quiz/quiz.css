@@ -1,0 +1,72 @@
+/* CreateQuiz.css */
+.create-quiz-container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .create-quiz-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .create-quiz-container button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-quiz-container button:hover {
+    background-color: #45a049;
+  }
+  .floating-message {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+  
+  .floating-message p {
+    margin-bottom: 15px;
+  }
+  
+  
+  .floating-message button {
+    background-color: #2ec04e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .floating-message button:hover {
+    background-color: #00b32d;
+  }
+  
+  /* Animation for fading in the floating message */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+  
