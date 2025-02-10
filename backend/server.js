@@ -9,8 +9,9 @@ const Quiz = require('./models/Quiz');
 
 
 const app = express();
-app.use(cors({ origin: 'quizzel.vercel.app', 
-    credentials: true }));
+app.use(cors({ // Adjust this to your frontend URL
+  credentials: true // Allow credentials (cookies, authorization headers)
+}))
 app.use(express.json());
 
 // Connect to MongoDB
