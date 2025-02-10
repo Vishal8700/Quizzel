@@ -9,7 +9,7 @@ const Quiz = require('./models/Quiz');
 
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:3000', 
+app.use(cors({ origin: 'quizzel.vercel.app', 
     credentials: true }));
 app.use(express.json());
 
